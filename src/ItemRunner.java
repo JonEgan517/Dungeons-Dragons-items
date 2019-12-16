@@ -1,14 +1,39 @@
+import java.util.Scanner;
+
 public class ItemRunner 
 {
 	public static void main(String[] args)
-	{
-		Items [] bag = new Items[1];
-		bag[0] = new Greataxe();
+	{		
+		Scanner intInput = new  Scanner(System.in);
+		System.out.println("Choose your Weapon");
+		int weaponItem = intInput.nextInt();
 		
-		for(Items b : bag)
+		switch(weaponItem)
 		{
-			b.pickUp();
-			b.typeOfItem();
+			case 1:
+				Items ga = new Greataxe();
+				ga.pickUp();
+				break;
+			case 2:
+				Items m = new Mace();
+				m.pickUp();
+				break;
+			case 3:
+				Items sw = new Sword();
+				sw.pickUp();
+				break;
+			case 4:
+				Items st = new Staff();
+				st.pickUp();
+				break;
+			case 5:
+				Items d = new Dagger();
+				d.pickUp();
+				break;
+			case 6:
+				Items b = new Bow();
+				b.pickUp();
+				break;
 		}
 	}
 }

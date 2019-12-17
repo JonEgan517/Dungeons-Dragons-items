@@ -1,4 +1,4 @@
-public abstract class Armor extends Items
+public class Armor extends Items
 {
 	@Override
 	public void typeOfItem()
@@ -9,5 +9,11 @@ public abstract class Armor extends Items
 	public Armor()
 	{
 		itemType = "Armor";
+	}
+
+	@Override
+	public void pickUp() {
+		// TODO Auto-generated method stub
+		
 	}
 }

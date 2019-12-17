@@ -1,5 +1,5 @@
 
-public class Bow extends Weapon
+public class Plate extends Armor
 {
 	@Override
 	public void pickUp() 
@@ -7,9 +7,9 @@ public class Bow extends Weapon
 		System.out.println(nameOfItem);	
 	}
 	
-	public Bow()
+	public Plate()
 	{
-		nameOfItem = "Bow";
-		strength = 0;
+		nameOfItem = "Plate Armor";
+		defence = 0;
 	}
 }

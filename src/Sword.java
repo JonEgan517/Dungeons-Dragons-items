@@ -4,13 +4,12 @@ public class Sword extends Weapon
 	@Override
 	public void pickUp() 
 	{
-		System.out.println(nameOfItem + " used by " + classes + ".");	
+		System.out.println(nameOfItem);	
 	}
 	
 	public Sword()
 	{
 		nameOfItem = "Sword";
-		classes = "";
-		stats = "";
+		strength = 0;
 	}
 }

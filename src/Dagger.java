@@ -4,13 +4,12 @@ public class Dagger extends Weapon
 	@Override
 	public void pickUp() 
 	{
-		System.out.println(nameOfItem + " used by " + classes + ".");	
+		System.out.println(nameOfItem);	
 	}
 	
 	public Dagger()
 	{
 		nameOfItem = "Dagger";
-		classes = "";
-		stats = "";
+		strength = 0;
 	}
 }

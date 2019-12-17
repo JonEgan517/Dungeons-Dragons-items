@@ -1,8 +1,8 @@
 public abstract class Items 
 {
 	protected String nameOfItem;
-	protected String stats;
-	protected String classes;
+	protected int strength;
+	protected int defence;
 	protected String itemType;
 	
 	public abstract void pickUp();

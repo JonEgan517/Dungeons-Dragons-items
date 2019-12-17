@@ -3,14 +3,13 @@ public class Greataxe extends Weapon
 	@Override
 	public void pickUp()
 	{
-		System.out.println(nameOfItem + " used by " + classes + ".");
+		System.out.println(nameOfItem);
 	}
 	
 	public Greataxe()
 	{
 		nameOfItem = "Greataxe";
-		classes = "Barbarians";
-		stats = "";
+		strength = 0;
 	}
 	
 }
